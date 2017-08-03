@@ -1,0 +1,61 @@
+<include file="Index/_meta" />
+<title>编辑管理员 - 管理员管理 - H-ui.admin v2.4</title>
+</head>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal" id="smart-form">
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>管理员：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="text" class="input-text" placeholder="" id="username" name="username" value="{$admin.username}" disabled="true">
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>原始密码：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="password" class="input-text" autocomplete="off" value="" placeholder="原始密码" id="password" name="password">
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>新密码：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="password" class="input-text" autocomplete="off"  placeholder="确认新密码" id="newpassword" name="newpassword">
+		</div>
+	</div>
+		<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>真实姓名:</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="text" class="input-text" placeholder="@" name="realname" id="realname" value="{$admin.realname}">
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>邮箱：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="text" class="input-text" placeholder="@" name="email" id="email" value="{$admin.email}">
+		</div>
+	</div>
+	 <input type="hidden" name="admin_id" value="{$admin.admin_id}"/>
+	<div class="row cl">
+		<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+			 <button type="button" class="btn btn-primary radius" id="smart-button-submit">提交</button>
+		</div>
+	</div>
+	</form>
+</article>
+
+<!--_footer 作为公共模版分离出去--> 
+<include file="Index/_footer" />
+<!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/messages_zh.js"></script> 
+<script type="text/javascript">
+ var SCOPE = {
+        'save_url' : './admin.php?c=Admin&a=save',
+        'jump_url' : './admin.php?c=Admin&a=index',
+    }
+</script> 
+</body>
+</html>

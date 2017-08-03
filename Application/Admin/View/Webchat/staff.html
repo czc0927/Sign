@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>员工查询</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- loading mui -->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/mui.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/pages.css" />
+	<!-- custorm style -->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/style.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/mui.min.css">
+	<!-- loading mui.picker.min -->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/mui.picker.min.css">
+	<!-- loading mui.popicker -->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/mui.poppicker.css">
+	<!-- custorm style -->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/style.css">
+</head>
+<body>
+	<header id="header" class="mui-bar mui-bar-nav">
+		<h1 class="mui-title">智能云锁</h1>
+		<a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="javascript:history.go(-1)"><span class="mui-icon mui-icon-left-nav"></span></a>
+		<a class="mui-icon mui-icon-bars mui-pull-right" href="#topPopover"></a>
+	</header>
+	<!-- 右上角弹出菜单 -->
+	<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+                       <li class="mui-table-view-cell">
+						<a href="{:U('webchat/depart')}">部门查询</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/staff')}">员工查询</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/today')}"今日签到</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/live')}">远程监控</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/register')}">智能开锁</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/personCenter')}">个人中心</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 主内容部分 -->
+	<div class="content">
+			<section class="xueqi_new">
+						<div class="class" id="classResult">
+							查询:{$dep}
+						</div>
+						<button id="showCityPicker" class="select" type="button">选择</button>
+			</section>
+		<section class="rate_group">
+			<table>
+				<tr>
+                            <th>员工编号</th>
+                            <th>姓名</th>
+                            <th>职务</th>
+                            <th>预约</th>
+				</tr>
+				<volist name="staffs" id="vo">
+                            <tr>
+                                <td>{$vo.sno}</td>
+                                <td>{$vo.name}</td>
+                                <td>{$vo.position}</td>
+                                <if condition="$vo.scribe eq 0">
+                                       <td><button attr-id="{$vo.staff_id}" start="0" id="subscribe" class="mui-btn mui-btn-royal mui-btn-outlined">预约</button></td>
+								<else />
+								       <td><button attr-id="{$vo.staff_id}"  start="1" id="desubscribe" class="mui-btn mui-btn-success mui-btn-outlined">已预约</button></td>
+								</if>
+                            </tr>
+                  </volist>
+			</table>
+		<div class="pages">
+         {$pageRes}
+        </div>
+	</div>
+	<script src="__PUBLIC__/webchat/js/mui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/webchat/js/jquery-1.12.1.min.js"></script>
+	<!-- loading mui -->
+	<script type="text/javascript" src="__PUBLIC__/webchat/js/mui.min.js"></script>
+	<!-- loading picker -->
+	<script type="text/javascript" src="__PUBLIC__/webchat/js/mui.picker.min.js"></script>
+	<!-- loading popicker -->
+	<script type="text/javascript" src="__PUBLIC__/webchat/js/mui.poppicker.js"></script>
+	<!-- loading class-data -->
+	<script type="text/javascript" src="__PUBLIC__/webchat/js/class-data.js"></script>
+    <include file="Index/_footer" />
+	 <script>
+    var SCOPE = {
+         'set_scribe_url' : './admin.php?c=webchat&a=subscribe',
+    }
+
+</script>
+	<script type="text/javascript">
+		(function($, doc) {
+			$.init();
+			$.ready(function() {
+				var cityPicker = new $.PopPicker({
+					layer: 1
+				});
+				cityPicker.setData(classData);
+				var showCityPickerButton = doc.getElementById('showCityPicker');
+				var cityResult = doc.getElementById('classResult');
+				showCityPickerButton.addEventListener('tap', function(event) {
+					cityPicker.show(function(items) {
+					location.href ="./admin.php?c=webchat&a=staff&depart_id="+items[0].value;
+					});
+				}, false);
+			});
+
+		})(mui, document);
+
+	</script>
+
+	<script type="text/javascript">
+
+      $('.rate_group #desubscribe,#subscribe').on('click',function(){
+             var id=$(this).attr("attr-id");
+             var start=$(this).attr("start");
+		     data = {};
+	         data['id']=id;
+	         data['status']=start;
+	         var url=SCOPE.set_scribe_url;
+	           layer.confirm('确认要操作吗？',function(index){
+	           	  todelete(url, data);
+	           	});
+             function todelete(url, data) {
+				 $.post(
+					  url,
+					  data,
+					  function(s){
+					  if(s.status == 1) {
+				         layer.msg(s.message,{icon:1,time:2000});
+					        window.location.href="./admin.php?c=webchat&a=staff";
+				      }else if(s.status == 0) {
+				         layer.msg(s.message,{icon:2,time:2000});
+				        }
+					    },"JSON");
+              }
+        });
+	</script>
+
+</body>
+</html>

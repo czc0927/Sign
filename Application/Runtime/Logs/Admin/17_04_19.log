@@ -1,0 +1,546 @@
+[ 2017-04-19T00:34:41+08:00 ] 180.153.206.24 /Sign/admin.php?m%253DAdmin%2526c%253DDepart%2526a%253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T00:34:41+08:00 ] 180.153.206.24 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-04-19T01:30:50+08:00 ] 183.57.53.196 /Sign/admin.php?m%2525253DAdmin%25252526c%2525253DStatis%25252526a%2525253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T01:30:50+08:00 ] 183.57.53.196 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2017-04-19T01:30:59+08:00 ] 180.153.214.178 /Sign/admin.php?m%2525253DAdmin%25252526c%2525253DStatis%25252526a%2525253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T01:30:59+08:00 ] 180.153.214.178 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2017-04-19T03:01:00+08:00 ] 119.147.207.158 /Sign/admin.php?m%25253DAdmin%252526c%25253DDepart%252526a%25253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T03:01:00+08:00 ] 119.147.207.158 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2017-04-19T03:01:09+08:00 ] 180.163.2.116 /Sign/admin.php?m%25253DAdmin%252526c%25253DDepart%252526a%25253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T03:01:09+08:00 ] 180.163.2.116 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-04-19T04:05:02+08:00 ] 119.147.207.158 /Sign/admin.php?m%252525253DAdmin%2525252526c%252525253DStatis%2525252526a%252525253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T04:05:02+08:00 ] 119.147.207.158 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2017-04-19T04:05:12+08:00 ] 180.153.81.212 /Sign/admin.php?m%252525253DAdmin%2525252526c%252525253DStatis%2525252526a%252525253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T04:05:12+08:00 ] 180.153.81.212 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2017-04-19T06:21:57+08:00 ] 101.226.66.180 /Sign/admin.php?m%2525253DAdmin%25252526c%2525253DDepart%25252526a%2525253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T06:21:57+08:00 ] 101.226.66.180 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2017-04-19T07:06:55+08:00 ] 101.226.65.102 /Sign/admin.php?m%25252525253DAdmin%252525252526c%25252525253DStatis%252525252526a%25252525253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T07:06:55+08:00 ] 101.226.65.102 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-04-19T09:19:12+08:00 ] 101.226.89.116 /Sign/admin.php?m%252525253DAdmin%2525252526c%252525253DDepart%2525252526a%252525253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T09:19:12+08:00 ] 101.226.89.116 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000308s ]
+
+[ 2017-04-19T10:36:59+08:00 ] 101.226.33.221 /Sign/admin.php?m%2525252525253DAdmin%25252525252526c%2525252525253DStatis%25252525252526a%2525252525253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T10:36:59+08:00 ] 101.226.33.221 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-04-19T11:17:48+08:00 ] 14.152.69.186 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-04-19T11:21:31+08:00 ] 14.152.69.189 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2017-04-19T11:21:31+08:00 ] 14.152.69.189 /Sign/admin.php?c=Login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-04-19T13:17:59+08:00 ] 112.90.82.218 /Sign/admin.php?m%25252525253DAdmin%252525252526c%25252525253DDepart%252525252526a%25252525253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T13:17:59+08:00 ] 112.90.82.218 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2017-04-19T13:18:07+08:00 ] 101.226.51.226 /Sign/admin.php?m%25252525253DAdmin%252525252526c%25252525253DDepart%252525252526a%25252525253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T13:18:07+08:00 ] 101.226.51.226 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000314s ]
+
+[ 2017-04-19T13:23:59+08:00 ] 140.207.185.111 /Sign/admin.php?m%252525252525253DAdmin%2525252525252526c%252525252525253DStatis%2525252525252526a%252525252525253Dindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T13:23:59+08:00 ] 140.207.185.111 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-04-19T14:06:19+08:00 ] 101.226.65.102 /Sign/admin.php?%26c%3Dlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Undefined variable: sing_path /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /home/ubuntu/Sign/ThinkPHP/Common/functions.php 第 997 行.
+
+[ 2017-04-19T14:06:19+08:00 ] 101.226.65.102 /Sign/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+

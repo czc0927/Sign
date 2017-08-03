@@ -1,0 +1,107 @@
+﻿<include file="Index/_meta" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/static/h-ui/css/style.css" />
+<title>考勤记录</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 考勤管理 <span class="c-gray en">&gt;</span> 考勤记录 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+        <div class="row">
+          <form action="./admin.php" method="get">
+			<div class="text-c"> 
+			 <span class="select-box inline">
+				<select class="select" name="depart_id">
+				 <option value="0" <if condition="0 eq $depart_id">selected="selected"</if>>部门分类</option>
+                    <foreach name="departs" item="depart">
+                        <option value="{$depart.depart_id}" <if condition="$depart.depart_id eq $depart_id">selected="selected"</if>>{$depart.name}</option>
+                    </foreach>
+				</select>
+			</span>
+			    <input type="hidden" name="c" value="Attend"/>
+                <input type="hidden" name="a" value="record"/>
+				<input type="text" class="input-text" style="width:250px" placeholder="输入员工名称" id="" name="name" value="{$name}">
+				<button type="submit" class="btn btn-success" id="sub_data"><i class="Hui-iconfont">&#xe665;</i> 搜用户</button>
+			</div>
+		   </form>
+        </div>
+			<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a></span> <span class="r">共有数据：<strong>{$Count}</strong> 条</span>
+			</div>
+			 <form id="smart-listorder">
+	           <table class="table table-border table-bordered table-bg">
+		         <thead>
+			<tr>
+				<th scope="col" colspan="9">考勤列表</th>
+			</tr>
+			<tr class="text-c">
+				<th width="25"><input type="checkbox" name="" value=""></th>
+				<th width="60">员工编号</th>
+				<th width="70">姓名</th>
+				<th width="55">部门</th>
+				<th width="70">职位</th>
+				<th width="100">上班时间</th>
+				<th width="100">下班时间</th>
+				<th width="80">操作</th>
+			</tr>
+		</thead>
+		<tbody>
+		 <volist name="attends" id="vo">
+			<tr class="text-c">
+				<td><input type="checkbox" value="{$vo.attend_id}" name="listorder[{$vo.attend_id}]"></td>
+			    <td>{$vo.sno}</td>
+				<td>{$vo.name}</td>
+				<td>{$vo.departname}</td>
+				<td>{$vo.position}</td>
+				<td>{$vo.wordtime|date="Y-m-d H:i",###}</td>
+				<td>{$vo.clostime|date="Y-m-d H:i",###}</td>
+				<td class="td-manage"><a style="text-decoration:none" attr-id="{$vo.attend_id}" id="btn-huanyuan" href="javascript:;" title="还原"><i class="Hui-iconfont">&#xe66b;</i></a></td>
+			</tr>
+			</volist>
+		</tbody>
+	</table>
+	</form>
+	<div class="pages">
+         {$pageRes}
+    </div>
+</div>
+<!--_footer 作为公共模版分离出去-->
+<include file="Index/_footer" />
+<!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/admin/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript">
+     var SCOPE = {
+        'jump_url' : './admin.php?c=Attend&a=del',
+        'set_online_url':'./admin.php?c=Attend&a=setonline',
+    }
+
+/*用户-还原*/
+$('.table-border #btn-huanyuan').click(function() {
+	 var id = $(this).attr('attr-id');
+	layer.confirm('确认要还原吗？',function(index){
+		    postdata = {};
+		    postdata['id'] = id;
+		    postdata['online'] =1;
+		    posturl = SCOPE.set_online_url;
+		    jump_url = SCOPE.jump_url;
+		          $.post(
+		             posturl,
+		             postdata,
+		             function(s){
+		                 if(s.status == 1) {
+		                    layer.msg("ok",{icon:1,time:2000});
+		                    window.location.href=jump_url;
+		                   }else {
+		                      layer.msg(s.message,{icon:2,time:1000});
+		                     }
+		               }
+		            ,"JSON");
+		layer.msg('已还原!',{icon: 6,time:1000});
+	 });
+});
+</script> 
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+﻿<include file="Index/_meta" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/static/h-ui/css/style.css" />
+<title>删除的员工</title>
+</head>
+<title>员工列表</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 员工管理 <span class="c-gray en">&gt;</span> 员工列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+        <div class="row">
+           <form action="./admin.php" method="get">
+			<div class="text-c"> 日期范围：
+				<input type="text" name="starttime" onfocus="WdatePicker({skin:'default',minDate:'%y-%M-{%d-100}',maxDate:'%y-%M-{%d+100}'})" value="{$starttime}" id="datemin" class="input-text Wdate" style="width:120px;" >
+				-
+				<input type="text" name="endtime" onfocus="WdatePicker({skin:'default',minDate:'%y-%M-{%d-100}',maxDate:'%y-%M-{%d+100}'})" value="{$endtime}" id="datemax" class="input-text Wdate" style="width:120px;">
+			    <input type="hidden" name="c" value="staff"/>
+                <input type="hidden" name="a" value="index"/>
+				<input type="text" class="input-text" style="width:250px" placeholder="输入员工名称" id="" name="name" value="{$name}">
+				<button type="submit" class="btn btn-success" id="sub_data"><i class="Hui-iconfont">&#xe665;</i> 搜用户</button>
+			</div>
+		   </form>
+        </div>
+			<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"></span> <span class="r">共有数据：<strong>{$Count}</strong> 条</span>
+			</div>
+			 <form id="smart-listorder">
+	           <table class="table table-border table-bordered table-bg">
+		         <thead>
+			<tr>
+				<th scope="col" colspan="9">员工列表</th>
+			</tr>
+			<tr class="text-c">
+				<th width="120">员工编号</th>
+				<th width="90">姓名</th>
+				<th width="40">性别</th>
+				<th width="110">职位</th>
+				<th width="130">手机号码</th>
+				<th width="130">加入时间</th>
+				<th width="80">是否已启用</th>
+				<th width="100">操作</th>
+			</tr>
+		</thead>
+		<tbody>
+		 <volist name="staffs" id="vo">
+			<tr class="text-c">
+			    <td>{$vo.sno}</td>
+				<td>{$vo.name}</td>
+				<td>{$vo.sex|setsex}</td>
+				<td>{$vo.position}</td>
+				<td>{$vo.telephone}</td>
+				<td>{$vo.createtime|date="Y-m-d H:i",###}</td>
+				<td ><span class="label label-danger radius">已删除</span></td>
+				<td class="td-manage"><a style="text-decoration:none" attr-id="{$vo.staff_id}" id="btn-huanyuan" href="javascript:;" title="还原"><i class="Hui-iconfont">&#xe66b;</i></a></td>
+		    </tr>
+		</volist>
+		</tbody>
+	</table>
+	</form>
+	<div class="pages">
+         {$pageRes}
+    </div>
+</div>
+<!--_footer 作为公共模版分离出去-->
+<include file="Index/_footer" />
+<!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/admin/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/admin/lib/laypage/1.2/laypage.js"></script> 
+<script type="text/javascript">
+
+ var SCOPE = {
+        'jump_url' : './admin.php?c=Staff&a=del',
+        'set_online_url':'./admin.php?c=Staff&a=setonline',
+    }
+
+/*用户-还原*/
+$('.table-border #btn-huanyuan').click(function() {
+	 var id = $(this).attr('attr-id');
+	layer.confirm('确认要还原吗？',function(index){
+		    postdata = {};
+		    postdata['id'] = id;
+		    postdata['online'] =1;
+		    posturl = SCOPE.set_online_url;
+		    jump_url = SCOPE.jump_url;
+		          $.post(
+		             posturl,
+		             postdata,
+		             function(s){
+		                 if(s.status == 1) {
+		                    layer.msg("ok",{icon:1,time:2000});
+		                    window.location.href=jump_url;
+		                   }else {
+		                      layer.msg(s.message,{icon:2,time:1000});
+		                     }
+		               }
+		            ,"JSON");
+		layer.msg('已还原!',{icon: 6,time:1000});
+	 });
+});
+</script> 
+
+</body>
+</html>

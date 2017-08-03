@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我要查询</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/style.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<header id="header" class="mui-bar mui-bar-nav">
+		<h1 class="mui-title">智能云锁</h1>
+		<a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="./admin.php?c=Webchat&a=index"><span class="mui-icon mui-icon-left-nav"></span></a>
+		<a class="mui-icon mui-icon-bars mui-pull-right" href="#topPopover"></a>
+	</header>
+	<!-- 右上角弹出菜单 -->
+		<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+							<a href="{:U('webchat/depart')}">部门查询</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/staff')}">员工查询</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/today')}"今日签到</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/live')}">远程监控</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/register')}">智能开锁</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/personCenter')}">个人中心</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<!-- 主内容部分 -->
+	<div class="content">
+		<section class="xueqi">
+			<div class="class">
+				<label id="classResult">查询</label>
+			</div>
+		</section>
+
+		<section class="query">
+			<table>
+				<tr>
+					<td>
+						<a href="{:U('webchat/depart')}">
+							<img src="__PUBLIC__/webchat/img/timetable.png">
+							<p>部门查询</p>
+						</a>
+					</td>
+					<td>
+						<a href="{:U('webchat/staff')}">
+							<img src="__PUBLIC__/webchat/img/classroom.png">
+							<p>员工查询</p>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="{:U('webchat/today')}">
+							<img src="__PUBLIC__/webchat/img/chengji.png">
+							<p>今日签到</p>
+						</a>
+					</td>
+					  <td>
+						<a href="{:U('webchat/live')}">
+							<img src="__PUBLIC__/webchat/img/timg.jpg">
+							<p>远程监控</p>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="{:U('webchat/register')}">
+							<img src="__PUBLIC__/webchat/img/electricity.png">
+							<p>智能开锁</p>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</section>
+	</div>
+	<script src="__PUBLIC__/webchat/js/mui.min.js"></script>
+	<include file="Index/_footer" />
+</body>
+</html>

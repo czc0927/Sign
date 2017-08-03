@@ -1,0 +1,42 @@
+<include file="Index/_meta" />
+<title>添加家庭 - 家庭管理 - H-ui.admin v2.4</title>
+</head>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal" id="smart-form">
+		<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>家庭名称：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="" placeholder="" id="name" name="name">
+				</div>
+		</div>
+		<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>电话：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="" placeholder="" id="telephone" name="telephone">
+				</div>
+		</div>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+				 <button type="button" class="btn btn-primary radius" id="smart-button-submit">提交</button>
+		    </div>
+	    </div>
+	</form>
+</article>
+
+<!--_footer 作为公共模版分离出去--> 
+<include file="Index/_footer" />
+<!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/messages_zh.js"></script> 
+<script type="text/javascript">
+ var SCOPE = {
+        'save_url' : './admin.php?c=Family&a=add',
+        'jump_url' : './admin.php?c=Family&a=index',
+    }
+</script> 
+</body>
+</html>

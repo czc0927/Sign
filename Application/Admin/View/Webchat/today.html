@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>今日记录</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- loading mui -->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/mui.min.css">
+	<!-- custorm style -->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/style.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<header id="header" class="mui-bar mui-bar-nav">
+		<h1 class="mui-title">智能云锁</h1>
+		<a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="./admin.php?c=Webchat&a=index"><span class="mui-icon mui-icon-left-nav"></span></a>
+		<a class="mui-icon mui-icon-bars mui-pull-right" href="#topPopover"></a>
+	</header>
+	<!-- 右上角弹出菜单 -->
+	<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+						 <li class="mui-table-view-cell">
+						<a href="{:U('webchat/depart')}">部门查询</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/staff')}">员工查询</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/today')}"今日签到</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/live')}">远程监控</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/register')}">智能开锁</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="{:U('webchat/personCenter')}">个人中心</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 主内容部分 -->
+	<div class="content">
+		<section class="xueqi">
+			<div class="class">
+				<label id="classResult">今日记录</label>
+			</div>
+		</section>
+		<section class="rate_group">
+			<table>
+				<tr>
+                            <th>id</th>
+                            <th>姓名</th>
+                            <th>上班时间</th>
+                            <th>下班时间</th>
+				</tr>
+				<volist name="staffs" id="vo">
+                            <tr>
+                                <td>{$vo.staff_id}</td>
+                                <td>{$vo.name}</td>
+                                <td><if condition="$vo.wordtime eq 0">未上班<else />{$vo.wordtime|date="Y-m-d H:i",###}</if></td>
+                                <td><if condition="$vo.clostime eq 0">未下班<else />{$vo.clostime|date="Y-m-d H:i",###}</if></td>
+                            </tr>
+                </volist>
+			</table>
+		<div class="pages">
+         {$pageRes}
+        </div>
+	</div>
+	<script src="__PUBLIC__/webchat/js/mui.min.js"></script>
+	<include file="Index/_footer" />
+</body>
+</html>

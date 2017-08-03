@@ -1,0 +1,80 @@
+<include file="Index/_meta" />
+<title>编辑员工 - 员工管理 - H-ui.admin v2.4</title>
+</head>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal" id="smart-form">
+	    <div class="row cl">
+				<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>编号：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="{$staff.sno}" placeholder="" id="name" name="name" disabled="true">
+				</div>
+		</div>
+		<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>姓名：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="{$staff.name}" placeholder="" id="name" name="name">
+				</div>
+		</div>
+		<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>性别：</label>
+				<div class="formControls col-xs-8 col-sm-9 skin-minimal">
+					<div class="radio-box">
+						<input name="sex" value="0" type="radio" id="sex-1" <if condition="$staff.sex eq 0 ">checked="checked"</if> >
+						<label for="sex-1">男</label>
+					</div>
+					<div class="radio-box">
+						<input type="radio" value="1" id="sex-2" name="sex" <if condition="$staff.sex eq 1 ">checked="checked"</if> >
+						<label for="sex-2">女</label>
+					</div>
+				</div>
+		</div>
+		<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>手机：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="{$staff.telephone}" placeholder="" id="telephone" name="telephone">
+				</div>
+		</div>
+		<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-3">所在部门：</label>
+				<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
+					<select class="select" size="1" name="depart_id">
+						<option value="" selected>请选择部门</option>
+						 <volist name="departs" id="depart">
+	                        <option value="{$depart.depart_id}">{$depart.name}</option>
+	                     </volist>
+					</select>
+					</span> 
+				</div>
+		</div>
+		<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>职位：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="{$staff.position}" placeholder="" id="position" name="position">
+				</div>
+		</div>
+		 <input type="hidden" name="staff_id" value="{$staff.staff_id}"/>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+				 <button type="button" class="btn btn-primary radius" id="smart-button-submit">提交</button>
+		    </div>
+	    </div>
+	</form>
+</article>
+
+<!--_footer 作为公共模版分离出去--> 
+<include file="Index/_footer" />
+<!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/messages_zh.js"></script> 
+<script type="text/javascript">
+ var SCOPE = {
+        'save_url' : './admin.php?c=Staff&a=add',
+        'jump_url' : './admin.php?c=Staff&a=index',
+    }
+</script> 
+</body>
+</html>

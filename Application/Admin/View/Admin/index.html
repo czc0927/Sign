@@ -1,0 +1,88 @@
+﻿<include file="Index/_meta" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/static/h-ui/css/style.css" />
+<title>管理员列表</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 管理员管理 <span class="c-gray en">&gt;</span> 管理员列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+        <div class="row">
+          <form action="./admin.php" method="get">
+			<div class="text-c"> 日期范围：
+				<input type="text" name="starttime" onfocus="WdatePicker({skin:'default',minDate:'%y-%M-{%d-100}',maxDate:'%y-%M-{%d+100}'})" value="{$starttime}" id="datemin" class="input-text Wdate" style="width:120px;" >
+				-
+				<input type="text" name="endtime" onfocus="WdatePicker({skin:'default',minDate:'%y-%M-{%d-100}',maxDate:'%y-%M-{%d+100}'})" value="{$endtime}" id="datemax" class="input-text Wdate" style="width:120px;">
+			    <input type="hidden" name="c" value="admin"/>
+                <input type="hidden" name="a" value="index"/>
+				<input type="text" class="input-text" style="width:250px" placeholder="输入管理员名称" id="" name="name" value="{$name}">
+				<button type="submit" class="btn btn-success" id="sub_data"><i class="Hui-iconfont">&#xe665;</i> 搜用户</button>
+			</div>
+		   </form>
+        </div>
+			<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a href="javascript:;" onclick="admin_add('添加管理员',SCOPE.add_url,'800','500')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加管理员</a></span> <span class="r">共有数据：<strong>{$Count}</strong> 条</span>
+			</div>
+			 <form id="smart-listorder">
+	           <table class="table table-border table-bordered table-bg">
+		         <thead>
+			<tr>
+				<th scope="col" colspan="9">管理员列表</th>
+			</tr>
+			<tr class="text-c">
+				<th width="25"><input type="checkbox" name="" value=""></th>
+				<th width="40">ID</th>
+				<th width="150">登录名</th>
+				<th width="150">真实姓名</th>
+				<th width="90">邮箱</th>
+				<th width="130">加入时间</th>
+				<th width="100">是否已启用</th>
+				<th width="100">操作</th>
+			</tr>
+		</thead>
+		<tbody>
+		 <volist name="admins" id="vo">
+			<tr class="text-c">
+				<td><input type="checkbox" value="{$vo.admin_id}" name="listorder[{$vo.admin_id}]"></td>
+				<td>{$vo.admin_id}</td>
+				<td>{$vo.username}</td>
+				<td>{$vo.realname}</td>
+				<td>{$vo.email}</td>
+				<td>{$vo.createtime|date="Y-m-d H:i",###}</td>
+				<if condition="$vo.status eq -1">
+                  <td class="td-status" attr-id="{$vo.admin_id}" attr-status="{$vo.status}"><span class="label label-success radius" >未启用</span></td>
+				<else />
+				  <td class="td-status" attr-id="{$vo.admin_id}" attr-status="{$vo.status}"><a style="text-decoration:none" onClick="admin_stop(this,'10001')" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i></a></td>
+				</if>
+				<td>
+		          <a title="删除" attr-id="{$vo.admin_id}" id="smart-delete" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+			</tr>
+			</volist>
+		</tbody>
+	</table>
+	</form>
+	<div class="pages">
+         {$pageRes}
+    </div>
+</div>
+<!--_footer 作为公共模版分离出去-->
+<include file="Index/_footer" />
+<!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/admin/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript">
+
+ var SCOPE = {
+        'add_url' : './admin.php?c=Admin&a=add',
+        'edit_url' : './admin.php?c=Admin&a=edit',
+        'set_status_url' : './admin.php?c=Admin&a=setStatus',
+        'jump_url' : './admin.php?c=Admin&a=index',
+        'set_online_url':'./admin.php?c=Admin&a=setonline',
+        'listorder_url' : './admin.php?c=Admin&a=listorder',
+    }
+function admin_add(title,url,w,h){
+	layer_show(title,url,w,h);
+}
+</script>
+
+</body>
+</html>

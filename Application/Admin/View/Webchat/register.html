@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="height=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/mui.min.css">
+  <!-- loading mui.picker.min.css -->
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/mui.picker.min.css">
+  <!-- loading mui.poppicker.css -->
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/mui.poppicker.css">
+  <!-- custorm style -->
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/webchat/css/style.css">
+</head>
+<body>
+<!-- 导航栏 -->
+  <header id="header" class="mui-bar mui-bar-nav">
+    <h1 class="mui-title">智能云锁</h1>
+    <a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="./admin.php?c=Webchat&a=index"><span class="mui-icon mui-icon-left-nav"></span></a>
+    <a class="mui-icon mui-icon-bars mui-pull-right" href="#topPopover"></a>
+  </header>
+
+  <div id="topPopover" class="mui-popover">
+      <div class="mui-popover-arrow"></div>
+      <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+          <ul class="mui-table-view">
+             <li class="mui-table-view-cell">
+            <a href="{:U('webchat/depart')}">部门查询</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="{:U('webchat/staff')}">员工查询</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="{:U('webchat/today')}"今日签到</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="{:U('webchat/live')}">远程监控</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="{:U('webchat/register')}">智能开锁</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="{:U('webchat/personCenter')}">个人中心</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  <!-- 内容 -->
+  <div class="content">
+    <div class="userBind">
+      <!-- 头像 -->
+      <div class="head">
+        <div class="head_icon"><img src="__PUBLIC__/webchat/img/timg.jpeg"></div>
+        <p>老丸子</p>
+      </div>
+      <!-- 用户注册内容 -->
+      <form class="mui-input-group">
+          <div class="mui-input-row">
+            <label>手机号</label>
+            <input type="number"  class="mui-input-clear" id="telephone" placeholder="请输入手机号码" data-input-clear="5"><span class="mui-icon mui-icon-clear mui-hidden"></span>
+          </div>
+          <div class="mui-input-row">
+            <label>验证码</label>
+            <input type="text" class="mui-input-clear yanzhengma_input" id="code" placeholder="" data-input-clear="5"><span class="mui-icon mui-icon-clear mui-hidden"></span>
+            <span class="msgs">获取短信验证码</span>
+          </div>
+        </form>
+        <button type="button" id="submit" class="mui-btn mui-btn-success mui-btn-block upload ">开锁</button>
+    </div>
+
+  </div>
+  <!-- loading jquery -->
+  <script type="text/javascript" src="__PUBLIC__/webchat/js/jquery-1.12.1.min.js"></script>
+  <!-- loading mui.min.js -->
+  <script type="text/javascript" src="__PUBLIC__/webchat/js/mui.min.js"></script>
+  <!-- loading mui.picker.min.js -->
+  <script type="text/javascript" src="__PUBLIC__/webchat/js/mui.picker.min.js"></script>
+  <!-- loading mui.poppicker.js -->
+  <script type="text/javascript" src="__PUBLIC__/webchat/js/mui.poppicker.js"></script>
+  <include file="Index/_footer" />
+   <script>
+    var SCOPE = {
+         'set_status_url' : './admin.php?c=webchat&a=register',
+         'get_code_url' : './admin.php?c=webchat&a=cooke',
+    }
+
+</script>
+<script>
+$('#submit').on('click',function(){
+
+        if ($.trim($('#telephone').val()).length == 0||$.trim($('#telephone').val())=="输入手机号") { 
+          $("#tip").text("手机号没有输入");
+          $('#telephone').focus();
+           return false; 
+         } 
+         else {
+          if($.trim($('#telephone').val()).length != 11) {
+           $("#tip").text("手机号格式不正确");
+           $('#telephone').focus();
+            return false; 
+          }
+        }
+         if ($.trim($('#code').val()).length == 0||$.trim($('#code').val())=="输入验证码") { 
+          $("#tip").text("请输入验证码");
+          $('#telephone').focus();
+           return false; 
+         } 
+         var code=$.trim($('#code').val());
+          var telephone=$.trim($('#telephone').val());
+         var url = SCOPE.set_status_url;
+         data = {};
+         data['phone']=telephone;
+        data['code']=code;
+         $.post(url,data,function(result){
+                if(result.status == 1) {
+                  layer.msg(result.message,{icon:1,time:2000});
+                  window.location.href="./admin.php?c=webchat";
+                }else if(result.status == 0) {
+                  layer.msg(result.message,{icon:2,time:2000});
+                }
+            },"JSON");
+});
+</script>
+
+<script type="text/javascript">
+    $(function  () {
+      //获取短信验证码
+      var validCode=true;
+      $(".msgs").click (function  () {
+
+        if ($.trim($('#telephone').val()).length == 0||$.trim($('#telephone').val())=="输入手机号") { 
+              layer.msg("请输入手机号码",{icon:1,time:2000});
+            $('#telephone').focus();
+           } 
+           else {
+            if($.trim($('#telephone').val()).length != 11) {
+                layer.msg("手机格式不正确",{icon:1,time:2000});
+             $('#telephone').focus();
+            }
+          }
+
+        var telephone=$.trim($('#telephone').val());
+         var url = SCOPE.get_code_url;
+         data = {};
+         data['phone']=telephone;
+         $.post(url,data,function(result){
+                if(result.status == 1) {
+                    code();
+                }else if(result.status == 0) {
+                  layer.msg(result.message,{icon:2,time:2000});
+                  window.location.href="./admin.php?c=webchat&a=register";
+                }
+            },"JSON");
+        
+      })
+
+      function code(){
+                var time=60;
+                var code=$(".msgs");
+                if (validCode) {
+                  validCode=false;
+                  code.addClass("msgs1");
+                  var t=setInterval(function  () {
+                    time--;
+                    code.html(time+"秒");
+                    if (time==0) {
+                      clearInterval(t);
+                    code.html("重新获取");
+                      validCode=true;
+                    code.removeClass("msgs1");
+                    }
+                  },1000)
+                 }
+           }
+    })
+
+  </script>
+</body>
+</html>
